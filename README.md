@@ -1,8 +1,6 @@
 # bancoxyzBackend
 
-API REST Spring Boot para BancoXYZ. Expone CRUD de **clientes**, **cuentas** y **transacciones**, con el mismo estilo de capas que [gestionPedidos](https://github.com/edd-stegmaier/gestionPedidos) (`controller`, `service`, `dto`, `model`, `repository`) y **sin** S3, EFS ni Spring Security.
-
-Los CSV de la actividad previa tenian fechas invalidas, montos negativos, tipos `-1`/`unknown` y nombres vacios. Este backend modela la informacion **limpia** y relaciona:
+API REST Spring Boot para BancoXYZ. Expone CRUD de **clientes**, **cuentas** y **transacciones**.
 
 ```
 Cliente 1 --- * Cuenta 1 --- * Transaccion
